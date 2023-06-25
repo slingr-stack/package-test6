@@ -1,0 +1,31 @@
+{
+   "label": "Service Test",
+   "name": "serviceTest",
+   "dependencies": [{
+     "type": "package",
+     "name": "versionTest",
+     "version": "v3.0.0"
+   },
+     {
+       "type": "service",
+       "name": "http",
+       "version": "v1.2.6",
+       "instanceId" : "shared"
+     }],
+   "configuration":[
+     {
+       "name": "message",
+       "label": "String Message",
+       "type": "text",
+       "required": true
+     }
+   ],
+   "events": [],
+   "metadata": [
+       {
+           "type": "script",
+           "namespace": "api",
+           "path": "/scripts/lib.js"
+       }
+   ]
+}

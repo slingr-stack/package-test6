@@ -6,6 +6,10 @@ exports.getMessage = function () {
     return config.get("message");
 }
 
+exports.otherMessage = function () {
+    return "other";
+}
+
 exports.serviceTest = function (){
     var val = config.get("message");
     var response = svc.http.get({

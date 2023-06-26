@@ -7,7 +7,7 @@ exports.getMessage = function () {
 }
 
 exports.otherMessage = function () {
-    return "4";
+    return "5";
 }
 
 exports.serviceTest = function (){

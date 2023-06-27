@@ -21,6 +21,34 @@ exports.test = function () {
     return "error test";
 }
 
+exports.test5 = function() {
+    function ejemplo() {
+        var x = 5;
+    }
+
+    try {
+        console.log(x); // ReferenceError: x no está definido, ya que está fuera del alcance de la función
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+exports.test4 = function() {
+    var resultado = 10 / 0; // Infinity
+    console.log(resultado);
+}
+
+exports.AA = function() {
+    console.log("Función AA");
+    BB();
+}
+
+function BB() {
+    console.log("Función BB");
+    test4();
+    test5();
+}
+
 exports.serviceTest = function (){
     var val = config.get("message");
     var response = svc.http.get({

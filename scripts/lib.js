@@ -21,7 +21,7 @@ exports.test = function () {
     return "error test";
 }
 
-exports.test5 = function() {
+test5 = function() {
     function ejemplo() {
         var x = 5;
     }
@@ -33,7 +33,7 @@ exports.test5 = function() {
     }
 }
 
-exports.test4 = function() {
+test4 = function() {
     var resultado = 10 / 0; // Infinity
     log(resultado);
 }

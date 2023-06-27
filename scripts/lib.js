@@ -27,24 +27,24 @@ exports.test5 = function() {
     }
 
     try {
-        console.log(x); // ReferenceError: x no está definido, ya que está fuera del alcance de la función
+        log(x); // ReferenceError: x no está definido, ya que está fuera del alcance de la función
     } catch (error) {
-        console.error(error);
+        log(error);
     }
 }
 
 exports.test4 = function() {
     var resultado = 10 / 0; // Infinity
-    console.log(resultado);
+    log(resultado);
 }
 
 exports.AA = function() {
-    console.log("Función AA");
+    log("Función AA");
     BB();
 }
 
 function BB() {
-    console.log("Función BB");
+    log("Función BB");
     test4();
     test5();
 }

@@ -10,6 +10,10 @@ exports.otherMessage = function () {
     return "8";
 }
 
+exports.other = function () {
+    this.test();
+}
+
 exports.test = function () {
     var b = "msg"
     log(b)

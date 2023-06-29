@@ -7,7 +7,7 @@ exports.getMessage = function () {
 }
 
 exports.packageName = function () {
-    return "package6";
+    return "package666";
 }
 
 exports.versionDep = function () {

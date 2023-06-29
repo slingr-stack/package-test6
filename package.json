@@ -9,7 +9,7 @@
      {
        "type": "service",
        "name": "http",
-       "version": "v1.2.0",
+       "version": "v^1.2.0",
        "instanceId" : "shared"
      }],
    "configuration":[

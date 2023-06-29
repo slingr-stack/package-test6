@@ -4,12 +4,12 @@
    "dependencies": [{
      "type": "package",
      "name": "versionTest",
-     "version": "v5.0.0"
+     "version": "v5.5.0"
    },
      {
        "type": "service",
        "name": "http",
-       "version": "v1.2.6",
+       "version": "v1.2.0",
        "instanceId" : "shared"
      }],
    "configuration":[

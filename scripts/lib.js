@@ -6,47 +6,13 @@ exports.getMessage = function () {
     return config.get("message");
 }
 
-exports.otherMessage = function () {
-    return "8";
+exports.packageName = function () {
+    return "package6";
 }
 
-exports.other = function () {
-    this.test();
-}
-
-exports.test = function () {
-    var b = "msg"
-    log(b)
-    log(a)
-    return "error test";
-}
-
-test5 = function() {
-    function ejemplo() {
-        var x = 5;
-    }
-
-    try {
-        log(x); // ReferenceError: x no está definido, ya que está fuera del alcance de la función
-    } catch (error) {
-        log(error);
-    }
-}
-
-test4 = function() {
-    var resultado = 10 / 0; // Infinity
-    log(resultado);
-}
-
-exports.AA = function() {
-    log("Función AA");
-    BB();
-}
-
-function BB() {
-    log("Función BB");
-    test4();
-    test5();
+exports.versionDep = function () {
+    var versionResponse = "Version response: " + dependencies.versionTest.versionLib.versionValue();
+    return versionResponse;
 }
 
 exports.serviceTest = function (){

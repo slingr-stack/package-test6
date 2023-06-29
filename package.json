@@ -4,7 +4,7 @@
    "dependencies": [{
      "type": "package",
      "name": "versionTest",
-     "version": "v3.0.0"
+     "version": "v^3.0.0"
    },
      {
        "type": "service",
